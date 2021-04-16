@@ -26,6 +26,7 @@ namespace Bangun_Datar
                 catch (OverflowException)
                 {
                     menu.ErrorMessage("Angka yang dimasukkan terlalu banyak");
+                    Console.Clear();
                 }
             }
 

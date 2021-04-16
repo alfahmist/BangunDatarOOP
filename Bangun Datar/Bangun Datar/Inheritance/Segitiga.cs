@@ -24,8 +24,10 @@ namespace Bangun_Datar.Inheritance
         {
             sisiMiring = Math.Sqrt(Math.Pow(panjang, 2) + Math.Pow(tinggi, 2));
             double rumusSegitiga = (panjang * tinggi) / 2;
+
             luas = Math.Round(rumusSegitiga,2);
             keliling = Math.Round((panjang + tinggi + sisiMiring),2);
+            
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Sisi Miring: {sisiMiring}");
             Console.WriteLine($"Luas {name} : {luas}");

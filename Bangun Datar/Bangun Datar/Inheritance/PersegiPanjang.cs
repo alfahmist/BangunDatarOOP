@@ -13,6 +13,11 @@ namespace Bangun_Datar.Inheritance
             this.tinggi = tinggi;
         }
 
+        public override string GetName()
+        {
+            return this.name;
+        }
+
         public override void Hitung()
         {
             if(panjang == tinggi && panjang != 0)

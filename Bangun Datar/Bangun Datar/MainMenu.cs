@@ -33,7 +33,7 @@ namespace Bangun_Datar
             Console.WriteLine();
             foreach (string list in Lists)
             {
-                Console.WriteLine($"{count}.{list}");
+                Console.WriteLine($"{count}. {list}");
                 count++;
             }
             Console.WriteLine("Masukkan Menu Pilihan 1 sampai 5");
