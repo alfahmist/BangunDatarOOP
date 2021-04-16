@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Bangun_Datar
 {
-    public class BangunDatar
+    public class BangunDatar : IBangunDatar
     {
         protected int panjang;
         protected int tinggi;
