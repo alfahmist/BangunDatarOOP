@@ -17,10 +17,15 @@ namespace Bangun_Datar
                 {
                     input = Int32.Parse(Console.ReadLine());
                     menu.Input(input);
-                } catch(FormatException)
+                } 
+                catch(FormatException)
                 {
                     menu.ErrorMessage("Harap Masukkan Integer");
                     Console.Clear();
+                }
+                catch (OverflowException)
+                {
+                    menu.ErrorMessage("Angka yang dimasukkan terlalu banyak");
                 }
             }
 

@@ -59,6 +59,10 @@ namespace Bangun_Datar
                     catch (FormatException)
                     {
                        ErrorMessage("Harap Masukkan Integer");
+                    }   
+                    catch (OverflowException)
+                    {
+                       ErrorMessage("Angka yang dimasukkan terlalu banyak");
                     }
                     finally
                     {
@@ -81,6 +85,10 @@ namespace Bangun_Datar
                     catch (FormatException)
                     {
                         ErrorMessage("Harap Masukkan Integer");
+                    }
+                    catch (OverflowException)
+                    {
+                        ErrorMessage("Angka yang dimasukkan terlalu banyak");
                     }
                     finally
                     {
@@ -105,6 +113,10 @@ namespace Bangun_Datar
                     {
                         ErrorMessage("Harap Masukkan Integer");
                     }
+                    catch (OverflowException)
+                    {
+                        ErrorMessage("Angka yang dimasukkan terlalu banyak");
+                    }
                     finally
                     {
                         Console.WriteLine();
@@ -125,6 +137,10 @@ namespace Bangun_Datar
                     catch (FormatException)
                     {
                         ErrorMessage("Harap Masukkan Integer");
+                    }
+                    catch (OverflowException)
+                    {
+                        ErrorMessage("Angka yang dimasukkan terlalu banyak");
                     }
                     finally
                     {
@@ -149,6 +165,10 @@ namespace Bangun_Datar
                     catch (FormatException)
                     {
                         ErrorMessage("Harap Masukkan Integer");
+                    }
+                    catch (OverflowException)
+                    {
+                        ErrorMessage("Angka yang dimasukkan terlalu banyak");
                     }
                     finally
                     {
