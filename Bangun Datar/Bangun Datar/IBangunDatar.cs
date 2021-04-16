@@ -8,14 +8,15 @@ namespace Bangun_Datar
     {
         
 
-        public virtual void Hitung()
+        public void Hitung()
         {
           
         }
 
-        protected virtual void ResetValue()
+        protected void ResetValue()
         {
 
         }
+
     }
 }
