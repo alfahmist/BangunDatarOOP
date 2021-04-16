@@ -7,8 +7,7 @@ namespace Bangun_Datar.Inheritance
     class JajarGenjang : BangunDatar
     {
         private string name = "Jajar Genjang";
-        protected int luas;
-        private int keliling;
+
         private int sisiMiring;
         public override string GetName()
         {

@@ -8,8 +8,6 @@ namespace Bangun_Datar.Inheritance
     {
         private string name = "Lingkaran";
         private const double pi = 3.14;
-        private double luas;
-        private double keliling;
 
         public override string GetName()
         {

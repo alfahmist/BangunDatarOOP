@@ -8,6 +8,8 @@ namespace Bangun_Datar
     {
         protected int panjang;
         protected int tinggi;
+        protected double luas;
+        protected double keliling;
         private string name = "Applikasi Menghitung Bangun Datar";
 
         public virtual string GetName()

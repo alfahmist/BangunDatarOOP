@@ -7,8 +7,6 @@ namespace Bangun_Datar.Inheritance
     class PersegiPanjang : BangunDatar
     {
         private string name = "Persegi Panjang";
-        private int luas;
-        private int keliling;
         public override void InputValue(int panjang, int tinggi)
         {
             this.panjang = panjang;

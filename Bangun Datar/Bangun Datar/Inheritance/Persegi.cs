@@ -9,9 +9,7 @@ namespace Bangun_Datar.Inheritance
     {
         
         private string name = "Persegi";
-        private int luas;
-        private int keliling;
-
+      
         public override string GetName()
         {
             return this.name;
