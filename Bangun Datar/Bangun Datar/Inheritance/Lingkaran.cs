@@ -6,9 +6,10 @@ namespace Bangun_Datar.Inheritance
 {
     class Lingkaran : BangunDatar
     {
-        private string name = "Luas Lingkaran";
+        private string name = "Lingkaran";
         private const double pi = 3.14;
-        protected double luas;
+        private double luas;
+        private double keliling;
 
         public override string GetName()
         {
@@ -16,7 +17,7 @@ namespace Bangun_Datar.Inheritance
         }
 
         // Overloading
-        public void InputLuas(int jari)
+        public void InputValue(int jari)
         {
             this.panjang = jari;
         }
@@ -24,8 +25,10 @@ namespace Bangun_Datar.Inheritance
         public override void Hitung()
         {
             luas = pi * (Math.Pow(panjang,2));
+            keliling = Math.Round((2 * pi * panjang),2);
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"{name} : {luas}");
+            Console.WriteLine($"Luas {name} : {luas}");
+            Console.WriteLine($"Keliling {name} : {keliling}");
             Console.ResetColor();
             ResetValue();
         }

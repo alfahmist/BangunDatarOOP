@@ -54,7 +54,7 @@ namespace Bangun_Datar
                         input1 = Int32.Parse(Console.ReadLine());
                         Console.Write("Masukkan Tinggi : ");
                         input2 = Int32.Parse(Console.ReadLine());
-                        persegi.InputLuas(input1, input2);
+                        persegi.InputValue(input1, input2);
                     }
                     catch (FormatException)
                     {
@@ -76,7 +76,7 @@ namespace Bangun_Datar
                         input1 = Int32.Parse(Console.ReadLine());
                         Console.Write("Masukkan Tinggi : ");
                         input2 = Int32.Parse(Console.ReadLine());
-                        persegiPanjang.InputLuas(input1, input2);
+                        persegiPanjang.InputValue(input1, input2);
                     }
                     catch (FormatException)
                     {
@@ -99,7 +99,7 @@ namespace Bangun_Datar
                         input1 = Int32.Parse(Console.ReadLine());
                         Console.Write("Masukkan Tinggi : ");
                         input2 = Int32.Parse(Console.ReadLine());
-                        segitiga.InputLuas(input1, input2);
+                        segitiga.InputValue(input1, input2);
                     }
                     catch (FormatException)
                     {
@@ -120,7 +120,7 @@ namespace Bangun_Datar
                     {
                         Console.Write("Masukkan jari jari : ");
                         input1 = Int32.Parse(Console.ReadLine());
-                        lingkaran.InputLuas(input1);
+                        lingkaran.InputValue(input1);
                     }
                     catch (FormatException)
                     {
@@ -141,8 +141,10 @@ namespace Bangun_Datar
                         Console.Write("Masukkan Panjang alas : ");
                         input1 = Int32.Parse(Console.ReadLine());
                         Console.Write("Masukkan Tinggi : ");
-                        input2 = Int32.Parse(Console.ReadLine());
-                        jajarGenjang.InputLuas(input1, input2);
+                        input2 = Int32.Parse(Console.ReadLine());     
+                        Console.Write("Masukkan Sisi Miring : ");
+                        int input3 = Int32.Parse(Console.ReadLine());
+                        jajarGenjang.InputValue(input1, input2, input3);
                     }
                     catch (FormatException)
                     {
@@ -151,7 +153,7 @@ namespace Bangun_Datar
                     finally
                     {
                         Console.WriteLine();
-                        lingkaran.Hitung();
+                        jajarGenjang.Hitung();
                         Console.WriteLine();
                      
                         Restart();

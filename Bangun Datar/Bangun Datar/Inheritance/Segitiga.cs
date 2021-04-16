@@ -6,14 +6,17 @@ namespace Bangun_Datar.Inheritance
 {
     class Segitiga : BangunDatar
     {
-        private string name = "Luas Segitiga Siku Siku";
-        protected double luas;
+        private string name = "Segitiga Siku Siku";
+        private double luas;
+        private double keliling;
+        private double sisiMiring;
+
         public override string GetName()
         {
             return this.name;
 
         }
-        public override void InputLuas(int alas, int tinggi)
+        public override void InputValue(int alas, int tinggi)
         {
             this.panjang = alas;
             this.tinggi = tinggi;
@@ -21,9 +24,13 @@ namespace Bangun_Datar.Inheritance
 
         public override void Hitung()
         {
+            sisiMiring = Math.Sqrt(Math.Pow(panjang, 2) + Math.Pow(tinggi, 2));
+
             luas = (panjang * tinggi)/2;
+            keliling = Math.Round((panjang + tinggi + sisiMiring),2);
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"{name} : {luas}");
+            Console.WriteLine($"Luas {name} : {luas}");
+            Console.WriteLine($"Keliling {name} : {keliling}");
             Console.ResetColor();
             ResetValue();
 

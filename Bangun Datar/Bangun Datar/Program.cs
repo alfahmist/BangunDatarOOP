@@ -9,12 +9,6 @@ namespace Bangun_Datar
         {
             int input;
             MainMenu menu = new MainMenu();
-            BangunDatar bangunDatar = new BangunDatar();
-            Persegi persegi = new Persegi();
-            PersegiPanjang persegiPanjang = new PersegiPanjang();
-            Segitiga segitiga = new Segitiga();
-            Lingkaran lingkaran = new Lingkaran();
-            JajarGenjang jajarGenjang = new JajarGenjang();
 
             while(menu.restart)
             {            

@@ -8,14 +8,14 @@ namespace Bangun_Datar
     {
         protected int panjang;
         protected int tinggi;
-        private string name = "Applikasi Luas Bangun Datar";
+        private string name = "Applikasi Menghitung Bangun Datar";
 
         public virtual string GetName()
         {
             return this.name;
         }
 
-        public virtual void InputLuas(int panjang, int tinggi)
+        public virtual void InputValue(int panjang, int tinggi)
         {
             Console.WriteLine($"Menghitung {name}");
             Console.WriteLine("Panjang : " + panjang);
@@ -27,10 +27,10 @@ namespace Bangun_Datar
             Console.WriteLine("Ini method Hitung() punya Class BangunDatar");
         }
         
-        protected void ResetValue()
+        protected virtual void ResetValue()
         {
         panjang = 0;
         tinggi = 0;
-    }
+        }
     }
 }

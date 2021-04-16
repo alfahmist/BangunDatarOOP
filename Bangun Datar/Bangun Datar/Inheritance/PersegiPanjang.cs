@@ -6,9 +6,10 @@ namespace Bangun_Datar.Inheritance
 {
     class PersegiPanjang : BangunDatar
     {
-        private string name = "Luas Persegi Panjang";
-        protected int luas;
-        public override void InputLuas(int panjang, int tinggi)
+        private string name = "Persegi Panjang";
+        private int luas;
+        private int keliling;
+        public override void InputValue(int panjang, int tinggi)
         {
             this.panjang = panjang;
             this.tinggi = tinggi;
@@ -23,8 +24,10 @@ namespace Bangun_Datar.Inheritance
             } else
             {
                 luas = panjang * tinggi;
+                keliling = (panjang * 2) + (tinggi * 2);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"{name} : {luas}");
+                Console.WriteLine($"Luas {name} : {luas}");
+                Console.WriteLine($"Keliling {name} : {keliling}");
                 Console.ResetColor();
             }
             ResetValue();

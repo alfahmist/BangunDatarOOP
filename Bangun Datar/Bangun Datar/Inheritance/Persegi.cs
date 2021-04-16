@@ -8,16 +8,16 @@ namespace Bangun_Datar.Inheritance
     public class Persegi : BangunDatar
     {
         
-        private string name = "Luas Persegi";
-        protected int luas;
+        private string name = "Persegi";
+        private int luas;
+        private int keliling;
 
         public override string GetName()
         {
             return this.name;
         }
 
-
-        public override void InputLuas(int panjang, int tinggi)
+        public override void InputValue(int panjang, int tinggi)
         {
             this.panjang = panjang;
             this.tinggi = tinggi;
@@ -28,8 +28,10 @@ namespace Bangun_Datar.Inheritance
             if (panjang == tinggi)
             {
                 luas = panjang * tinggi;
+                keliling = panjang * 4;
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"{name} : {luas}");
+                Console.WriteLine($"Luas {name} : {luas}");
+                Console.WriteLine($"Keliling {name} : {keliling}");
                 Console.ResetColor();
             }
             else
